@@ -52,6 +52,7 @@ namespace capek_01
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(17, 20);
             this.dateTimePicker1.TabIndex = 1;
+            this.dateTimePicker1.Tag = "maskedTextBox1";
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // dateTimePicker2
@@ -60,6 +61,7 @@ namespace capek_01
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(27, 20);
             this.dateTimePicker2.TabIndex = 3;
+            this.dateTimePicker2.Tag = "maskedTextBox2";
             // 
             // maskedTextBox2
             // 

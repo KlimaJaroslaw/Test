@@ -55,7 +55,7 @@ namespace WindowsFormsApp2
             "pozycja 1",
             "pozycja 2",
             "pozycja 3"});
-            this.checkedListBox1.Location = new System.Drawing.Point(283, 71);
+            this.checkedListBox1.Location = new System.Drawing.Point(239, 12);
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.Size = new System.Drawing.Size(120, 64);
             this.checkedListBox1.TabIndex = 1;
@@ -63,7 +63,7 @@ namespace WindowsFormsApp2
             // cbPon
             // 
             this.cbPon.AutoSize = true;
-            this.cbPon.Location = new System.Drawing.Point(56, 126);
+            this.cbPon.Location = new System.Drawing.Point(12, 67);
             this.cbPon.Name = "cbPon";
             this.cbPon.Size = new System.Drawing.Size(15, 14);
             this.cbPon.TabIndex = 2;
@@ -72,7 +72,7 @@ namespace WindowsFormsApp2
             // cbWt
             // 
             this.cbWt.AutoSize = true;
-            this.cbWt.Location = new System.Drawing.Point(89, 126);
+            this.cbWt.Location = new System.Drawing.Point(45, 67);
             this.cbWt.Name = "cbWt";
             this.cbWt.Size = new System.Drawing.Size(15, 14);
             this.cbWt.TabIndex = 3;
@@ -81,7 +81,7 @@ namespace WindowsFormsApp2
             // cbSr
             // 
             this.cbSr.AutoSize = true;
-            this.cbSr.Location = new System.Drawing.Point(122, 126);
+            this.cbSr.Location = new System.Drawing.Point(78, 67);
             this.cbSr.Name = "cbSr";
             this.cbSr.Size = new System.Drawing.Size(15, 14);
             this.cbSr.TabIndex = 4;
@@ -90,7 +90,7 @@ namespace WindowsFormsApp2
             // cbCzw
             // 
             this.cbCzw.AutoSize = true;
-            this.cbCzw.Location = new System.Drawing.Point(155, 126);
+            this.cbCzw.Location = new System.Drawing.Point(111, 67);
             this.cbCzw.Name = "cbCzw";
             this.cbCzw.Size = new System.Drawing.Size(15, 14);
             this.cbCzw.TabIndex = 5;
@@ -100,7 +100,7 @@ namespace WindowsFormsApp2
             // cbPt
             // 
             this.cbPt.AutoSize = true;
-            this.cbPt.Location = new System.Drawing.Point(188, 126);
+            this.cbPt.Location = new System.Drawing.Point(144, 67);
             this.cbPt.Name = "cbPt";
             this.cbPt.Size = new System.Drawing.Size(15, 14);
             this.cbPt.TabIndex = 6;
@@ -109,7 +109,7 @@ namespace WindowsFormsApp2
             // cbSob
             // 
             this.cbSob.AutoSize = true;
-            this.cbSob.Location = new System.Drawing.Point(221, 126);
+            this.cbSob.Location = new System.Drawing.Point(177, 67);
             this.cbSob.Name = "cbSob";
             this.cbSob.Size = new System.Drawing.Size(15, 14);
             this.cbSob.TabIndex = 7;
@@ -118,7 +118,7 @@ namespace WindowsFormsApp2
             // cbNdz
             // 
             this.cbNdz.AutoSize = true;
-            this.cbNdz.Location = new System.Drawing.Point(254, 126);
+            this.cbNdz.Location = new System.Drawing.Point(210, 67);
             this.cbNdz.Name = "cbNdz";
             this.cbNdz.Size = new System.Drawing.Size(15, 14);
             this.cbNdz.TabIndex = 8;
@@ -127,17 +127,19 @@ namespace WindowsFormsApp2
             // dtp1
             // 
             this.dtp1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtp1.Location = new System.Drawing.Point(56, 71);
+            this.dtp1.Location = new System.Drawing.Point(12, 12);
+            this.dtp1.MaxDate = new System.DateTime(9960, 12, 31, 14, 0, 0, 0);
+            this.dtp1.MinDate = new System.DateTime(9960, 12, 31, 6, 0, 0, 0);
             this.dtp1.Name = "dtp1";
             this.dtp1.ShowUpDown = true;
             this.dtp1.Size = new System.Drawing.Size(100, 20);
             this.dtp1.TabIndex = 10;
-            this.dtp1.Value = new System.DateTime(2021, 7, 22, 14, 38, 0, 0);
+            this.dtp1.Value = new System.DateTime(9960, 12, 31, 6, 0, 0, 0);
             // 
             // dtp2
             // 
             this.dtp2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtp2.Location = new System.Drawing.Point(169, 71);
+            this.dtp2.Location = new System.Drawing.Point(125, 12);
             this.dtp2.MaxDate = new System.DateTime(9960, 12, 31, 14, 0, 0, 0);
             this.dtp2.MinDate = new System.DateTime(9960, 12, 31, 6, 0, 0, 0);
             this.dtp2.Name = "dtp2";
@@ -149,7 +151,7 @@ namespace WindowsFormsApp2
             // lblPon
             // 
             this.lblPon.AutoSize = true;
-            this.lblPon.Location = new System.Drawing.Point(53, 110);
+            this.lblPon.Location = new System.Drawing.Point(9, 51);
             this.lblPon.Name = "lblPon";
             this.lblPon.Size = new System.Drawing.Size(26, 13);
             this.lblPon.TabIndex = 12;
@@ -158,7 +160,7 @@ namespace WindowsFormsApp2
             // lblPt
             // 
             this.lblPt.AutoSize = true;
-            this.lblPt.Location = new System.Drawing.Point(185, 110);
+            this.lblPt.Location = new System.Drawing.Point(141, 51);
             this.lblPt.Name = "lblPt";
             this.lblPt.Size = new System.Drawing.Size(17, 13);
             this.lblPt.TabIndex = 13;
@@ -167,7 +169,7 @@ namespace WindowsFormsApp2
             // lblCzw
             // 
             this.lblCzw.AutoSize = true;
-            this.lblCzw.Location = new System.Drawing.Point(152, 110);
+            this.lblCzw.Location = new System.Drawing.Point(108, 51);
             this.lblCzw.Name = "lblCzw";
             this.lblCzw.Size = new System.Drawing.Size(27, 13);
             this.lblCzw.TabIndex = 14;
@@ -176,7 +178,7 @@ namespace WindowsFormsApp2
             // lblSr
             // 
             this.lblSr.AutoSize = true;
-            this.lblSr.Location = new System.Drawing.Point(119, 110);
+            this.lblSr.Location = new System.Drawing.Point(75, 51);
             this.lblSr.Name = "lblSr";
             this.lblSr.Size = new System.Drawing.Size(17, 13);
             this.lblSr.TabIndex = 15;
@@ -185,7 +187,7 @@ namespace WindowsFormsApp2
             // lblWt
             // 
             this.lblWt.AutoSize = true;
-            this.lblWt.Location = new System.Drawing.Point(86, 110);
+            this.lblWt.Location = new System.Drawing.Point(42, 51);
             this.lblWt.Name = "lblWt";
             this.lblWt.Size = new System.Drawing.Size(21, 13);
             this.lblWt.TabIndex = 16;
@@ -194,7 +196,7 @@ namespace WindowsFormsApp2
             // lblNdz
             // 
             this.lblNdz.AutoSize = true;
-            this.lblNdz.Location = new System.Drawing.Point(251, 110);
+            this.lblNdz.Location = new System.Drawing.Point(207, 51);
             this.lblNdz.Name = "lblNdz";
             this.lblNdz.Size = new System.Drawing.Size(26, 13);
             this.lblNdz.TabIndex = 17;
@@ -203,7 +205,7 @@ namespace WindowsFormsApp2
             // lblSob
             // 
             this.lblSob.AutoSize = true;
-            this.lblSob.Location = new System.Drawing.Point(218, 110);
+            this.lblSob.Location = new System.Drawing.Point(174, 51);
             this.lblSob.Name = "lblSob";
             this.lblSob.Size = new System.Drawing.Size(26, 13);
             this.lblSob.TabIndex = 18;
@@ -213,7 +215,7 @@ namespace WindowsFormsApp2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(502, 243);
             this.Controls.Add(this.lblSob);
             this.Controls.Add(this.lblNdz);
             this.Controls.Add(this.lblWt);

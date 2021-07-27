@@ -29,7 +29,7 @@ namespace capek_01
         {
             MaskedTextBox mtb = sender as MaskedTextBox;
 
-            if  ((!e.IsValidInput) && maskedTextBox1.Text != "    -  -")
+            if  ((!e.IsValidInput) && mtb.Text != "    -  -")
                 {
                 mtb.Select();
                 mtb.Select(0, mtb.Text.Length);
@@ -40,6 +40,10 @@ namespace capek_01
         {
             ShemaMaskTextBox(maskedTextBox1);
             ShemaMaskTextBox(maskedTextBox2);
+
+            dateTimePicker1.ValueChanged += dateTimePicker_ValueChanged;
+            dateTimePicker2.ValueChanged += dateTimePicker_ValueChanged;
+
         }
 
        
@@ -47,6 +51,34 @@ namespace capek_01
         void maskedTextBox1_TypeValidationCompleted(object sender, TypeValidationEventArgs e)
         {
         
+        }
+
+        private void dateTimePicker_ValueChanged(object sender, EventArgs e)
+        {
+            DateTimePicker dtp = sender as DateTimePicker;
+            //string test;
+            //test = dateTimePicker1.Value.ToString("yyyy-MM-dd");
+            //maskedTextBox1.Text = test;
+
+            foreach (Control tempCtrl in this.Controls)
+            {
+                // Determine whether the control is textBox1,
+                // and if it is, remove it.
+                if (tempCtrl.Name == dtp.Tag)
+                {
+                    tempCtrl.Text = dtp.Value.ToString("yyyy-MM-dd");
+                    //Showm("JEST KONTROLKA");
+                    //this.Controls.Remove(tempCtrl);
+                }
+            }
+
+
+            //Form1. Controls.Find("maskedTextBox1", true)[0];
+
+            //MaskedTextBox myTextBox = (MaskedTextBox)this.GetControlByName(this, "maskedTextBox1");
+
+            //myTextBox.Text = "Hello!";
+
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
