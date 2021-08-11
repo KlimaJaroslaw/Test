@@ -14,7 +14,7 @@ namespace CAPEK_Przegladarka_komunikatow
 {
     public partial class FormGrid : Form
     {
-        BindingSource bSource = new BindingSource();
+        //BindingSource bSource = new BindingSource();
         public FormGrid()
         {
             InitializeComponent();
@@ -26,15 +26,19 @@ namespace CAPEK_Przegladarka_komunikatow
             Polaczenie();
             textBox1.Text = Global.connection.ToString();            
             RefreshData();
+            timer1.Enabled = true;
             
 
         }
 
+        BindingSource bSource = new BindingSource();
         private void RefreshData()
         {
             DataTable dt = DaneDoGrida();
             bSource.DataSource = dt;
             grid.DataSource = bSource;
+
+            grid.Columns["id"].Width = 10000;
         }
 
         
@@ -62,6 +66,9 @@ namespace CAPEK_Przegladarka_komunikatow
 
         private void btnZatwierdz_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Czy Kontynuować", "Pytanie", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+
             if (grid.SelectedRows.Count != 1)
                 return;
             
@@ -116,6 +123,11 @@ namespace CAPEK_Przegladarka_komunikatow
                 MessageBox.Show(exc.Message);
             }
 
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            pKomunikator.Visible = !pKomunikator.Visible;
         }
 
 

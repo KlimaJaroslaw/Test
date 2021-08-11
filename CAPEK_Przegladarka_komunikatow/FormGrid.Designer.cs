@@ -29,12 +29,18 @@ namespace CAPEK_Przegladarka_komunikatow
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGrid));
             this.grid = new System.Windows.Forms.DataGridView();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.btnZatwierdz = new System.Windows.Forms.Button();
             this.btnAnuluj = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pKomunikator = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pKomunikator)).BeginInit();
             this.SuspendLayout();
             // 
             // grid
@@ -70,12 +76,13 @@ namespace CAPEK_Przegladarka_komunikatow
             // 
             // btnZatwierdz
             // 
+            this.btnZatwierdz.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnZatwierdz.Location = new System.Drawing.Point(12, 525);
             this.btnZatwierdz.Name = "btnZatwierdz";
             this.btnZatwierdz.Size = new System.Drawing.Size(269, 95);
             this.btnZatwierdz.TabIndex = 3;
             this.btnZatwierdz.Text = "Zatwierdz";
-            this.btnZatwierdz.UseVisualStyleBackColor = true;
+            this.btnZatwierdz.UseVisualStyleBackColor = false;
             this.btnZatwierdz.Click += new System.EventHandler(this.btnZatwierdz_Click);
             // 
             // btnAnuluj
@@ -88,11 +95,39 @@ namespace CAPEK_Przegladarka_komunikatow
             this.btnAnuluj.UseVisualStyleBackColor = true;
             this.btnAnuluj.Click += new System.EventHandler(this.btnAnuluj_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(291, 78);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(576, 404);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // pKomunikator
+            // 
+            this.pKomunikator.Image = ((System.Drawing.Image)(resources.GetObject("pKomunikator.Image")));
+            this.pKomunikator.Location = new System.Drawing.Point(105, 101);
+            this.pKomunikator.Name = "pKomunikator";
+            this.pKomunikator.Size = new System.Drawing.Size(150, 98);
+            this.pKomunikator.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pKomunikator.TabIndex = 6;
+            this.pKomunikator.TabStop = false;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // FormGrid
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1113, 632);
+            this.Controls.Add(this.pKomunikator);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnAnuluj);
             this.Controls.Add(this.btnZatwierdz);
             this.Controls.Add(this.btnRefresh);
@@ -103,6 +138,7 @@ namespace CAPEK_Przegladarka_komunikatow
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormGrid_FormClosed);
             this.Load += new System.EventHandler(this.FormGrid_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pKomunikator)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -115,5 +151,8 @@ namespace CAPEK_Przegladarka_komunikatow
         private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.Button btnZatwierdz;
         private System.Windows.Forms.Button btnAnuluj;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pKomunikator;
+        private System.Windows.Forms.Timer timer1;
     }
 }
