@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "godziny", "WindowsFormsApp2
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "capek_01", "capek_01\capek_01.csproj", "{947EB354-2C88-4F60-8897-10AEF4352DC1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CAPEK_Przegladarka_komunikatow", "CAPEK_Przegladarka_komunikatow\CAPEK_Przegladarka_komunikatow.csproj", "{3757A6E2-C4FD-459E-85AE-6AF6F4097F8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Odczyt_z_pliku", "Odczyt_z_pliku\Odczyt_z_pliku.csproj", "{3B925FBE-6A46-4241-85CB-7D226396C155}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{947EB354-2C88-4F60-8897-10AEF4352DC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{947EB354-2C88-4F60-8897-10AEF4352DC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{947EB354-2C88-4F60-8897-10AEF4352DC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3757A6E2-C4FD-459E-85AE-6AF6F4097F8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3757A6E2-C4FD-459E-85AE-6AF6F4097F8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3757A6E2-C4FD-459E-85AE-6AF6F4097F8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3757A6E2-C4FD-459E-85AE-6AF6F4097F8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B925FBE-6A46-4241-85CB-7D226396C155}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B925FBE-6A46-4241-85CB-7D226396C155}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B925FBE-6A46-4241-85CB-7D226396C155}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B925FBE-6A46-4241-85CB-7D226396C155}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -29,5 +29,38 @@ namespace WindowsFormsApp2
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //textBox1.Text = dtp1.Value.ToString();
+            //maskedTextBox1.Select();
+
+            int  dni = (dtp2.Value - dtp2.Value).Days;
+            textBox1.Text = dni.ToString();
+            textBox1.Focus();
+
+        }
+
+        private void maskedTextBox1_Enter(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void maskedTextBox1_Click(object sender, EventArgs e)
+        {
+            maskedTextBox1.Select(0, maskedTextBox1.Text.Length);
+        }
+
+        private void maskedTextBox1_TypeValidationCompleted(object sender, TypeValidationEventArgs e)
+        {
+            MaskedTextBox mtb = sender as MaskedTextBox;
+
+            if ((!e.IsValidInput) && mtb.Text != "    -  -")
+            {
+                mtb.Select();
+                mtb.Select(0, mtb.Text.Length);
+                //mtb.Select(0);
+            }
+        }
     }
 }

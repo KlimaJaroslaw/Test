@@ -24,6 +24,7 @@ namespace capek_01
             mtb.TypeValidationCompleted += new TypeValidationEventHandler(maskedTextBox1_TypeValidationCompleted);
             mtb.BackColor = System.Drawing.ColorTranslator.FromHtml("#E5E5E5");
             mtb.TypeValidationCompleted += maskedTextBoxTypeValidationCompleted;
+            
         }
         void maskedTextBoxTypeValidationCompleted(object sender, TypeValidationEventArgs e)
         {
@@ -33,7 +34,8 @@ namespace capek_01
                 {
                 mtb.Select();
                 mtb.Select(0, mtb.Text.Length);
-                }
+                //mtb.Select(0);
+            }
 
         }
         private void Form1_Load(object sender, EventArgs e)

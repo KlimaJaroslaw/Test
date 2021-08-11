@@ -46,6 +46,9 @@ namespace WindowsFormsApp2
             this.lblWt = new System.Windows.Forms.Label();
             this.lblNdz = new System.Windows.Forms.Label();
             this.lblSob = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // checkedListBox1
@@ -62,10 +65,9 @@ namespace WindowsFormsApp2
             // 
             // cbPon
             // 
-            this.cbPon.AutoSize = true;
             this.cbPon.Location = new System.Drawing.Point(12, 67);
             this.cbPon.Name = "cbPon";
-            this.cbPon.Size = new System.Drawing.Size(15, 14);
+            this.cbPon.Size = new System.Drawing.Size(23, 14);
             this.cbPon.TabIndex = 2;
             this.cbPon.UseVisualStyleBackColor = true;
             // 
@@ -211,11 +213,43 @@ namespace WindowsFormsApp2
             this.lblSob.TabIndex = 18;
             this.lblSob.Text = "Sob";
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(79, 85);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(146, 20);
+            this.textBox1.TabIndex = 19;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(239, 82);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 20;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.Location = new System.Drawing.Point(78, 138);
+            this.maskedTextBox1.Mask = "00:00";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(34, 20);
+            this.maskedTextBox1.TabIndex = 21;
+            this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
+            this.maskedTextBox1.TypeValidationCompleted += new System.Windows.Forms.TypeValidationEventHandler(this.maskedTextBox1_TypeValidationCompleted);
+            this.maskedTextBox1.Click += new System.EventHandler(this.maskedTextBox1_Click);
+            this.maskedTextBox1.Enter += new System.EventHandler(this.maskedTextBox1_Enter);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(502, 243);
+            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lblSob);
             this.Controls.Add(this.lblNdz);
             this.Controls.Add(this.lblWt);
@@ -260,5 +294,8 @@ namespace WindowsFormsApp2
         private System.Windows.Forms.Label lblWt;
         private System.Windows.Forms.Label lblNdz;
         private System.Windows.Forms.Label lblSob;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
     }
 }
